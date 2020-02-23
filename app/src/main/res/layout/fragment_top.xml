@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="top"
+            type="com.m2comm.kingca2020.views.Top"/>
+    </data>
+
+    <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:h="50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <com.m2comm.kingca2020.modules.customview.CustomImgView
+                android:id="@+id/top_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:w="50"
+                app:h="50"
+                app:img="@drawable/btn_d_menu1"
+                app:imgDefaultColor="@android:color/black"
+                app:imgW="40"
+                app:imgH="40"
+                />
+
+            <com.m2comm.kingca2020.modules.customview.CustomImgView
+                android:id="@+id/top_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:w="120"
+                app:h="50"
+                app:img="@drawable/toplogo"
+                app:imgW="117"
+                app:imgH="26"
+                />
+
+            <com.m2comm.kingca2020.modules.customview.CustomImgView
+                android:id="@+id/mySchedule"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                app:w="100"
+                app:h="50"
+                app:img="@drawable/btnfav"
+                app:imgW="90"
+                app:imgH="20"
+                />
+
+            <com.m2comm.kingca2020.modules.customview.CustomImgView
+                android:visibility="gone"
+                android:id="@+id/top_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:w="40"
+                app:h="50"
+                app:img="@drawable/btn_d_search1"
+                app:imgDefaultColor="@android:color/black"
+                app:imgW="40"
+                app:imgH="40"
+                />
+
+        </LinearLayout>
+
+
+    </com.m2comm.kingca2020.modules.customview.CustomFrameLayout>
+
+
+
+
+</layout>

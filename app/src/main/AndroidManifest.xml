@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.m2comm.kingca2020">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".modules.common.ServiceAlertActivity"
+            android:theme="@style/Theme.AppCompat.Translucent"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".views.FindActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".views.GlanceActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".views.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".views.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".modules.common.IntroActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.PhotoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".views.TestActivity" >
+
+        </activity>
+        <activity android:name=".modules.common.Download_PDFViewerActivity" />
+        <activity
+            android:name=".views.MenuActivity"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+
+        <activity android:name=".views.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".views.PopWebviewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".views.Img_ZoomInOut"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor" />
+
+        <activity android:name=".views.ContentsActivity"
+            android:screenOrientation="portrait"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service android:name=".modules.common.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".modules.common.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".modules.common.AlarmReceive" />
+    </application>
+
+</manifest>

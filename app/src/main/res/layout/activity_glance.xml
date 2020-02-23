@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.GlanceActivity">
+
+    <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <!--*************Top start-->
+            <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+                android:id="@+id/fragment_C_Top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#323c57"
+                app:h="50" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#BF343C55"/>
+
+            <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+                android:id="@+id/fragment_S_Top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#323c57"
+                app:h="36" />
+
+            <com.m2comm.kingca2020.modules.customview.CustomView
+                android:id="@+id/g_dataForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E3E5EB"
+                android:orientation="vertical"
+                app:h="65">
+
+                <com.m2comm.kingca2020.modules.customview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Apr"
+                    app:fontType="condensed"
+                    android:textColor="@color/main_color_black"
+                    app:fontSize="15"
+                    app:h="20" />
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:h="10">
+
+                    <com.m2comm.kingca2020.modules.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Tue"
+                        app:fontType="condensed"
+                        android:textColor="@color/main_color_black"
+                        app:fontSize="9"
+                        app:h="10" />
+
+                    <com.m2comm.kingca2020.modules.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Wed"
+                        app:fontType="condensed"
+                        android:textColor="@color/main_color_black"
+                        app:fontSize="9"
+                        app:h="10" />
+
+                    <com.m2comm.kingca2020.modules.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Thu"
+                        android:textColor="@color/main_color_black"
+                        app:fontType="condensed"
+                        app:fontSize="9"
+                        app:h="10" />
+
+                    <com.m2comm.kingca2020.modules.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Fri"
+                        android:textColor="@color/main_color_black"
+                        app:fontType="condensed"
+                        app:fontSize="9"
+                        app:h="10" />
+
+                    <com.m2comm.kingca2020.modules.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Sat"
+                        android:textColor="@color/main_color_black"
+                        app:fontType="condensed"
+                        app:fontSize="9"
+                        app:h="10" />
+
+                    <com.m2comm.kingca2020.modules.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Sun"
+                        android:textColor="@color/main_color_black"
+                        app:fontType="condensed"
+                        app:fontSize="9"
+                        app:h="10" />
+
+                    <com.m2comm.kingca2020.modules.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Mon"
+                        android:textColor="@color/main_color_black"
+                        app:fontType="condensed"
+                        app:fontSize="9"
+                        app:h="10" />
+
+                </com.m2comm.kingca2020.modules.customview.CustomView>
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:h="30">
+
+                    <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:h="30">
+
+                        <com.m2comm.kingca2020.modules.customview.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="09"
+                            android:textColor="#9FA1A8"
+                            app:fontType="condensed"
+                            app:fontSize="14"
+                            app:h="30" />
+
+                    </com.m2comm.kingca2020.modules.customview.CustomFrameLayout>
+
+                    <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:h="30">
+
+
+                        <com.m2comm.kingca2020.modules.customview.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="10"
+                            android:textColor="#9FA1A8"
+                            app:fontType="condensed"
+                            app:fontSize="14"
+                            app:h="30" />
+
+                    </com.m2comm.kingca2020.modules.customview.CustomFrameLayout>
+
+                    <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+                        android:id="@+id/tab1"
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:h="30">
+
+                        <com.m2comm.kingca2020.modules.customview.CirView
+                            android:id="@+id/tab1_backV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:visibility="invisible"
+                            app:imgDefaultColor="@color/main_color_blue"
+                            app:h="25"
+                            app:w="25" />
+
+                        <com.m2comm.kingca2020.modules.customview.CustomTextView
+                            android:id="@+id/tab1_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="11"
+                            android:textColor="@color/main_color_white"
+                            app:fontType="condensed"
+                            app:fontSize="14"
+                            app:h="30" />
+
+                    </com.m2comm.kingca2020.modules.customview.CustomFrameLayout>
+
+                    <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+                        android:id="@+id/tab2"
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:h="30">
+
+                        <com.m2comm.kingca2020.modules.customview.CirView
+                            android:id="@+id/tab2_backV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            android:layout_gravity="center"
+                            app:imgDefaultColor="@color/main_color_blue"
+                            app:h="25"
+                            app:w="25" />
+
+                        <com.m2comm.kingca2020.modules.customview.CustomTextView
+                            android:id="@+id/tab2_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="12"
+                            android:textColor="@color/main_color_white"
+                            app:fontType="condensed"
+                            app:fontSize="14"
+                            app:h="30" />
+
+                    </com.m2comm.kingca2020.modules.customview.CustomFrameLayout>
+
+                    <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+                        android:id="@+id/tab3"
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:h="30">
+
+                        <com.m2comm.kingca2020.modules.customview.CirView
+                            android:id="@+id/tab3_backV"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:visibility="invisible"
+                            app:imgDefaultColor="@color/main_color_blue"
+                            app:h="25"
+                            app:w="25" />
+
+                        <com.m2comm.kingca2020.modules.customview.CustomTextView
+                            android:id="@+id/tab3_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="13"
+                            android:textColor="@color/main_color_white"
+                            app:fontType="condensed"
+                            app:fontSize="14"
+                            app:h="30" />
+
+                    </com.m2comm.kingca2020.modules.customview.CustomFrameLayout>
+
+                    <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:h="30">
+
+                        <com.m2comm.kingca2020.modules.customview.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="14"
+                            android:textColor="#9FA1A8"
+                            app:fontType="condensed"
+                            app:fontSize="14"
+                            app:h="30" />
+
+                    </com.m2comm.kingca2020.modules.customview.CustomFrameLayout>
+
+                    <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:h="30">
+
+                        <com.m2comm.kingca2020.modules.customview.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="15"
+                            android:textColor="#9FA1A8"
+                            app:fontType="condensed"
+                            app:fontSize="14"
+                            app:h="30" />
+
+                    </com.m2comm.kingca2020.modules.customview.CustomFrameLayout>
+
+                </com.m2comm.kingca2020.modules.customview.CustomView>
+
+            </com.m2comm.kingca2020.modules.customview.CustomView>
+
+            <com.m2comm.kingca2020.modules.customview.CustomWebview
+                android:id="@+id/g_Webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.m2comm.kingca2020.modules.customview.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#323c57"
+                android:orientation="horizontal"
+                app:h="40">
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:id="@+id/g_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    app:h="40">
+
+                    <com.m2comm.kingca2020.modules.customview.CustomImgView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:img="@drawable/programmenu_01"
+                        app:h="40"
+                        app:imgW="80"
+                        app:imgH="20"
+                        />
+
+                </com.m2comm.kingca2020.modules.customview.CustomView>
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:layout_width="1px"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_color_white" />
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:id="@+id/g_Program"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    app:h="40">
+
+                    <com.m2comm.kingca2020.modules.customview.CustomImgView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:img="@drawable/programmenu_02"
+                        app:h="40"
+                        app:imgW="80"
+                        app:imgH="20"
+                        />
+
+                </com.m2comm.kingca2020.modules.customview.CustomView>
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:layout_width="1px"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_color_white" />
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:id="@+id/g_schedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    app:h="40">
+
+                    <com.m2comm.kingca2020.modules.customview.CustomImgView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:img="@drawable/programmenu_03"
+                        app:h="40"
+                        app:imgW="80"
+                        app:imgH="20"
+                        />
+
+                </com.m2comm.kingca2020.modules.customview.CustomView>
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:layout_width="1px"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_color_white" />
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:id="@+id/g_bySession"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    app:h="40">
+
+                    <com.m2comm.kingca2020.modules.customview.CustomImgView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:img="@drawable/programmenu_04"
+                        app:h="40"
+                        app:imgW="80"
+                        app:imgH="20"
+                        />
+
+                </com.m2comm.kingca2020.modules.customview.CustomView>
+
+
+            </com.m2comm.kingca2020.modules.customview.CustomView>
+
+        </LinearLayout>
+
+        <com.m2comm.kingca2020.modules.customview.CustomView
+            android:id="@+id/default_clickV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BF000000"
+            android:orientation="vertical"
+            >
+
+            <com.m2comm.kingca2020.modules.customview.CustomView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:h="180"
+                />
+
+            <com.m2comm.kingca2020.modules.customview.CustomImgView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:img="@drawable/ico_click"
+                app:imgW="100"
+                app:imgH="130"
+                app:h="200"
+                />
+
+            <com.m2comm.kingca2020.modules.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Touch on a session to check the details.\nUse your fingers to zoom in/out."
+                app:fontType="condensed"
+                app:fontSize="16"
+                app:h="60"
+                android:gravity="center"
+                />
+
+        </com.m2comm.kingca2020.modules.customview.CustomView>
+
+
+    </com.m2comm.kingca2020.modules.customview.CustomFrameLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

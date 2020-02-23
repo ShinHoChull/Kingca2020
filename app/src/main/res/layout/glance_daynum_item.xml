@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+        android:id="@+id/tab1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        app:h="30">
+
+        <com.m2comm.kingca2020.modules.customview.CirView
+            android:id="@+id/tab1_backV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="invisible"
+            app:h="25"
+            app:imgDefaultColor="@color/main_color_blue"
+            app:w="25" />
+
+        <com.m2comm.kingca2020.modules.customview.CustomTextView
+            android:id="@+id/tab1_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="11"
+            android:textColor="@color/main_color_white"
+            app:fontSize="14"
+            app:fontType="condensed"
+            app:h="30" />
+
+    </com.m2comm.kingca2020.modules.customview.CustomFrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

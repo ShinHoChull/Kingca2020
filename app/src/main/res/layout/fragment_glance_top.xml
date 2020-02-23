@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="gtop"
+            type="com.m2comm.kingca2020.views.Glance_Top" />
+    </data>
+
+    <com.m2comm.kingca2020.modules.customview.CustomView
+        android:id="@+id/g_dataForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E3E5EB"
+        android:orientation="vertical"
+        app:h="65">
+
+        <com.m2comm.kingca2020.modules.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Apr"
+            android:textColor="@color/main_color_black"
+            app:fontSize="15"
+            app:fontType="condensed"
+            app:h="20" />
+
+        <com.m2comm.kingca2020.modules.customview.CustomView
+            android:id="@+id/glance_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:h="10">
+
+
+
+        </com.m2comm.kingca2020.modules.customview.CustomView>
+
+        <com.m2comm.kingca2020.modules.customview.CustomView
+            android:id="@+id/gDaynumTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:h="30">
+
+        </com.m2comm.kingca2020.modules.customview.CustomView>
+
+    </com.m2comm.kingca2020.modules.customview.CustomView>
+
+</layout>

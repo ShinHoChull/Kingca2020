@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="ctop"
+            type="com.m2comm.kingca2020.views.SubTop"/>
+    </data>
+
+    <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:h="36">
+
+        <com.m2comm.kingca2020.modules.customview.CustomImgView
+            android:id="@+id/sub_top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            app:w="30"
+            app:h="36"
+            app:img="@drawable/btn_back"
+            app:imgDefaultColor="@android:color/white"
+            app:imgW="30"
+            app:imgH="30"
+            />
+
+        <com.m2comm.kingca2020.modules.customview.CustomTextView
+            android:id="@+id/sub_top_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Photo Gallery"
+            app:fontType="condensed"
+            app:fontSize="14"
+            android:textColor="@color/main_color_white"
+            />
+
+
+    </com.m2comm.kingca2020.modules.customview.CustomFrameLayout>
+
+
+
+
+</layout>

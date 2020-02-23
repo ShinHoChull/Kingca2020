@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="bottom"
+            type="com.m2comm.kingca2020.views.Bottom" />
+    </data>
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:scaleType="fitCenter"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/footico1"
+                android:scaleType="fitCenter"
+                android:padding="6dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HOME"
+                android:textSize="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/program"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:scaleType="fitCenter"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/footico2"
+                android:scaleType="fitCenter"
+                android:padding="6dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PROGRAM"
+                android:textSize="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/now"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:scaleType="fitCenter"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/footico3"
+                android:scaleType="fitCenter"
+                android:padding="6dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOW"
+                android:textSize="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:scaleType="fitCenter"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/footico4"
+                android:scaleType="fitCenter"
+                android:padding="6dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SEARCH"
+                android:textSize="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/qa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:scaleType="fitCenter"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/footico5"
+                android:scaleType="fitCenter"
+                android:padding="6dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q&amp;A"
+                android:textSize="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@drawable/footico6"
+                android:scaleType="fitCenter"
+                android:padding="6dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MY SCHEDULE"
+                android:textSize="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</layout>

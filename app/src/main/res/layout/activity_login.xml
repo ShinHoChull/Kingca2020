@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="main"
+            type="com.m2comm.kingca2020.views.LoginActivity" />
+    </data>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.LoginActivity"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2A3F62"
+            android:orientation="vertical">
+
+            <com.m2comm.kingca2020.modules.customview.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                app:h="150" >
+                <com.m2comm.kingca2020.modules.customview.CustomImgView
+                    android:id="@+id/login_closeBt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    app:h="50"
+                    app:img="@drawable/btn_d_closed2"
+                    app:imgH="50"
+                    app:imgW="50"
+                    app:w="50" />
+            </com.m2comm.kingca2020.modules.customview.CustomView>
+
+
+            <com.m2comm.kingca2020.modules.customview.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:h="50">
+
+                <com.m2comm.kingca2020.modules.customview.CustomEditText
+                    android:id="@+id/login_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:hint="@string/login_hint_email"
+                    android:inputType="textEmailAddress"
+                    app:fontSize="22"
+                    app:h="50"
+                    app:w="250" />
+
+            </com.m2comm.kingca2020.modules.customview.CustomView>
+
+            <com.m2comm.kingca2020.modules.customview.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:h="10" />
+
+            <com.m2comm.kingca2020.modules.customview.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:h="50">
+
+                <com.m2comm.kingca2020.modules.customview.CustomEditText
+                    android:id="@+id/login_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:hint="@string/login_hint_password"
+                    android:inputType="textPassword"
+                    app:fontSize="22"
+                    app:h="50"
+                    app:w="250" />
+            </com.m2comm.kingca2020.modules.customview.CustomView>
+
+            <com.m2comm.kingca2020.modules.customview.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:h="20" />
+
+            <com.m2comm.kingca2020.modules.customview.CustomTextView
+                android:id="@+id/login_loginBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/login_edittext_borderline"
+                android:text="LOGIN"
+                app:fontType="black"
+                app:fontSize="20"
+                app:h="50"
+                app:w="250" />
+
+            <com.m2comm.kingca2020.modules.customview.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:h="40" />
+
+            <com.m2comm.kingca2020.modules.customview.CustomView
+                android:id="@+id/login_findEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:h="20">
+
+                <com.m2comm.kingca2020.modules.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Find account"
+                    app:fontType="condensed"
+                    app:fontSize="12"
+                    app:h="19"
+                    app:w="100" />
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="center"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    app:w="70" />
+
+            </com.m2comm.kingca2020.modules.customview.CustomView>
+
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

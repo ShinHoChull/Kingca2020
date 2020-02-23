@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.m2comm.kingca2020.modules.customview.CustomView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8C000000"
+    android:orientation="horizontal">
+
+    <com.m2comm.kingca2020.modules.customview.CustomView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:w="300">
+
+
+        <com.m2comm.kingca2020.modules.customview.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color_navy"
+            android:orientation="horizontal"
+            app:h="41" >
+
+            <com.m2comm.kingca2020.modules.customview.CustomImgView
+                android:id="@+id/menu_homeImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                app:w="44"
+                app:h="41"
+                app:imgW="40"
+                app:imgH="38"
+                app:img="@drawable/btn_d_home2"
+                />
+
+            <com.m2comm.kingca2020.modules.customview.CustomTextView
+                android:id="@+id/menu_homeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                app:w="40"
+                app:h="41"
+                app:fontSize="14"
+                app:fontType="condensed"
+                android:text="HOME"
+                android:textColor="@color/main_color_white"
+                />
+
+            <com.m2comm.kingca2020.modules.customview.CustomView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:w="125"
+                />
+
+            <com.m2comm.kingca2020.modules.customview.CustomImgView
+                android:id="@+id/menu_login_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="40dp"
+                app:w="44"
+                app:h="41"
+                app:imgW="40"
+                app:imgH="40"
+                app:img="@drawable/btn_d_setting"
+                android:visibility="gone"
+                />
+
+            <com.m2comm.kingca2020.modules.customview.CustomImgView
+                android:id="@+id/menu_login_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                app:w="44"
+                app:h="41"
+                app:imgW="40"
+                app:imgH="38"
+                app:img="@drawable/btn_d_login2"
+                />
+
+            <com.m2comm.kingca2020.modules.customview.CustomTextView
+                android:id="@+id/menu_login_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                app:fontType="condensed"
+                app:w="40"
+                app:fontSize="16"
+                android:text="Login"
+                android:textColor="@color/main_color_white"
+                />
+
+        </com.m2comm.kingca2020.modules.customview.CustomView>
+
+        <!--Top 하단 선택영역-->
+        <com.m2comm.kingca2020.modules.customview.CustomView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:h="100"
+            app:w="300">
+
+            <com.m2comm.kingca2020.modules.customview.CustomGridView
+                android:id="@+id/menu_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/main_color_darkblue"
+                android:gravity="center"
+                android:listSelector="@null"
+                android:numColumns="3"
+                android:overScrollMode="never"
+                app:h="100"
+                app:w="300" />
+
+        </com.m2comm.kingca2020.modules.customview.CustomView>
+
+        <com.m2comm.kingca2020.modules.customview.CustomView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            app:w="300"
+            app:h="440">
+
+            <com.m2comm.kingca2020.modules.common.AnimatedExpandableListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:childDivider="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:groupIndicator="@null"
+                />
+        </com.m2comm.kingca2020.modules.customview.CustomView>
+
+        <com.m2comm.kingca2020.modules.customview.CustomView
+            android:id="@+id/boothBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color_white"
+            android:gravity="center"
+            app:h="60"
+            app:w="300">
+
+            <com.m2comm.kingca2020.modules.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edittext_borderline"
+                android:gravity="center"
+                android:text="Booth Event"
+                app:fontType="condensed"
+                android:textColor="@color/main_color_darkblue"
+                app:fontSize="16"
+                app:h="47"
+                app:w="250" />
+
+        </com.m2comm.kingca2020.modules.customview.CustomView>
+
+        <com.m2comm.kingca2020.modules.customview.CustomView
+            android:id="@+id/pieH1"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:h="40"
+            android:background="@android:color/white"
+            />
+
+    </com.m2comm.kingca2020.modules.customview.CustomView>
+
+    <com.m2comm.kingca2020.modules.customview.CustomImgView
+        android:id="@+id/menu_closeBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:h="50"
+        app:img="@drawable/btn_d_closed2"
+        app:imgH="50"
+        app:imgW="50"
+        app:w="50" />
+
+</com.m2comm.kingca2020.modules.customview.CustomView>
+
+
+
+
+
+
+
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="find"
+            type="com.m2comm.kingca2020.views.FindActivity" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E9EDF4"
+        tools:context=".views.SettingActivity">
+
+            <com.m2comm.kingca2020.modules.customview.CustomView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+                    android:id="@+id/fragment_C_Top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_color_navy"
+                    app:h="50" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#BF343C55"/>
+
+                <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+                    android:id="@+id/fragment_S_Top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_color_navy"
+                    app:h="36" />
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:h="80"/>
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    app:h="50">
+
+                    <com.m2comm.kingca2020.modules.customview.CustomEditText
+                        android:id="@+id/find_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:hint="@string/find_hint_email"
+                        android:textColorHint="@android:color/black"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="10dp"
+                        app:fontSize="22"
+                        app:h="50"
+                        app:w="280" />
+                </com.m2comm.kingca2020.modules.customview.CustomView>
+
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/findBt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:background="@color/main_color_navy"
+                    android:orientation="horizontal"
+                    app:h="50"
+                    app:w="280">
+
+                    <com.m2comm.kingca2020.modules.customview.CustomView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:w="55"/>
+
+                    <com.m2comm.kingca2020.modules.customview.CustomImgView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:h="50"
+                        app:img="@drawable/ico_find"
+                        app:imgH="18"
+                        app:imgW="31"
+                        app:w="55" />
+
+                    <com.m2comm.kingca2020.modules.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:text="Find Password"
+                        app:fontType="condensed"
+                        android:textColor="@android:color/white"
+                        app:fontSize="16"
+                        app:h="50" />
+
+                </com.m2comm.kingca2020.modules.customview.CustomView>
+
+            </com.m2comm.kingca2020.modules.customview.CustomView>
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

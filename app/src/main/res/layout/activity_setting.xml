@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="main"
+            type="com.m2comm.kingca2020.views.SettingActivity" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E9EDF4"
+        tools:context=".views.SettingActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+                    android:id="@+id/fragment_C_Top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_color_navy"
+                    app:h="50" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#BF343C55"/>
+
+                <com.m2comm.kingca2020.modules.customview.CustomFrameLayout
+                    android:id="@+id/fragment_S_Top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_color_navy"
+                    app:h="36" />
+
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:h="75">
+
+                    <com.m2comm.kingca2020.modules.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="25dp"
+                        android:gravity="center_vertical"
+                        android:text=" KINGCA WEEK 2019 event information and\n
+real-time information can be received by mobile\n app push.
+"
+                        android:textColor="@color/main_color_black"
+                        app:fontType="condensed"
+                        app:fontSize="15"
+                        app:h="75" />
+
+                </com.m2comm.kingca2020.modules.customview.CustomView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <!--행사일정 start-->
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <com.m2comm.kingca2020.modules.customview.CustomView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/white"
+                                android:orientation="horizontal"
+                                app:h="40">
+
+                                <com.m2comm.kingca2020.modules.customview.CustomTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:text="PUSH"
+                                    android:textColor="@color/main_color_black"
+                                    app:fontType="condensed"
+                                    app:fontSize="18"
+                                    app:h="40"
+                                    app:w="280" />
+
+                                <com.m2comm.kingca2020.modules.customview.CustomImgView
+                                    android:id="@+id/setting_op1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    app:h="40"
+                                    app:img="@drawable/togleon"
+                                    app:imgH="20"
+                                    app:imgW="55"
+                                    app:w="60" />
+                            </com.m2comm.kingca2020.modules.customview.CustomView>
+                        </TableRow>
+                        <!--행사일정 end-->
+
+                    </TableLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <com.m2comm.kingca2020.modules.customview.CustomView
+                android:id="@+id/setting_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#172236"
+                android:gravity="center"
+                app:h="50">
+
+                <com.m2comm.kingca2020.modules.customview.CustomView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    app:h="50"
+                    app:w="220">
+
+                    <com.m2comm.kingca2020.modules.customview.CustomImgView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_gravity="center_vertical"
+                        app:h="40"
+                        app:img="@drawable/iclogout"
+                        app:imgH="25"
+                        app:imgW="17"
+                        app:w="55" />
+
+                    <com.m2comm.kingca2020.modules.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="LOGOUT"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        app:fontType="condensed"
+                        app:fontSize="23"
+                        app:h="50" />
+
+                </com.m2comm.kingca2020.modules.customview.CustomView>
+
+
+            </com.m2comm.kingca2020.modules.customview.CustomView>
+
+        </FrameLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

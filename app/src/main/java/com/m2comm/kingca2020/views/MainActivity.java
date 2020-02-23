@@ -1,0 +1,60 @@
+package com.m2comm.kingca2020.views;
+
+import android.Manifest;
+import android.content.pm.PackageManager;
+import android.databinding.DataBindingUtil;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+
+import com.m2comm.kingca2020.R;
+import com.m2comm.kingca2020.databinding.ActivityMainBinding;
+import com.m2comm.kingca2020.viewmodels.MainViewModel;
+
+public class MainActivity extends AppCompatActivity {
+
+    ActivityMainBinding binding;
+    private MainViewModel mainvm;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        this.binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        this.binding.setMain(this);
+        this.mainvm = new MainViewModel(this.binding , this);
+        this.permissionDemand();
+
+    }
+
+    public void pagerSet () {
+        this.mainvm.bannerTimer();
+    }
+
+    public void slideGo() {
+        this.mainvm.slideMove();
+    }
+
+    public void permissionDemand () {
+        int permission1 = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_CALENDAR);
+        int permission2 = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        if(permission1 == PackageManager.PERMISSION_DENIED || permission2 == PackageManager.PERMISSION_DENIED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_CALENDAR,Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+        }
+    }
+    public void changeNotice() {
+        this.mainvm.notiChange();
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        this.mainvm.onResume();
+    }
+}
