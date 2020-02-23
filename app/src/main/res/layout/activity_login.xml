@@ -113,6 +113,7 @@
                 app:h="40" />
 
             <com.m2comm.kingca2020.modules.customview.CustomView
+                android:visibility="gone"
                 android:id="@+id/login_findEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

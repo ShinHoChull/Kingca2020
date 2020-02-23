@@ -78,16 +78,21 @@
                         android:gravity="bottom"
                         android:background="#8C000000"
                         >
-                        <com.m2comm.kingca2020.modules.customview.CustomImgView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:w="40"
-                            app:h="37"
-                            app:imgW="20"
-                            app:imgH="20"
-                            app:img="@drawable/btn_d_notice2"
-                            app:imgDefaultColor="@color/main_color_yellow"
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/main_notice_img"
+                            android:scaleType="fitCenter"
+                            android:layout_marginLeft="10dp"
+                            android:padding="8dp"
                             />
+<!--                        <com.m2comm.kingca2020.modules.customview.CustomImgView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            -->
+<!--                            app:img="@drawable/main_notice_img"-->
+<!--                            android:scaleType="fitCenter"-->
+<!--                            />-->
 
                         <com.m2comm.kingca2020.modules.customview.CustomTextView
                             android:layout_width="wrap_content"
@@ -197,15 +202,38 @@
                 </LinearLayout>
             </FrameLayout>
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@drawable/ico_qa"
-                android:scaleType="fitCenter"
-                android:layout_gravity="right"
+            <LinearLayout
+                android:id="@+id/main_votingBt"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="100dp"
-                />
+                android:layout_marginTop="180dp"
+                android:layout_gravity="right"
+                android:orientation="vertical"
+                android:background="@drawable/voting_cirview">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ico_qa"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Q&amp;A"
+                    android:textColor="#1e2940"
+                    android:gravity="center"
+                    android:layout_marginTop="-5dp"
+                    android:textSize="10dp"
+                    />
+
+            </LinearLayout>
+
+
 
 
         </FrameLayout>

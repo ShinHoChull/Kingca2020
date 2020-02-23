@@ -20,51 +20,58 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-
-        <activity android:name=".modules.common.ServiceAlertActivity"
-            android:theme="@style/Theme.AppCompat.Translucent"
-            android:screenOrientation="portrait"
-            ></activity>
-        <activity android:name=".views.FindActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".views.GlanceActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".views.SettingActivity"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".views.LoginActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name=".modules.common.IntroActivity"
-            android:screenOrientation="portrait">
+        <activity android:name=".views.InfoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.PhotoActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".views.TestActivity" >
+        <activity android:name=".views.DesignActivity">
 
         </activity>
+        <activity
+            android:name=".modules.common.ServiceAlertActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".views.FindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.GlanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.common.IntroActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".views.PhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".views.TestActivity"></activity>
         <activity android:name=".modules.common.Download_PDFViewerActivity" />
         <activity
             android:name=".views.MenuActivity"
             android:theme="@style/Theme.AppCompat.Translucent" />
-
-        <activity android:name=".views.MainActivity"
-            android:screenOrientation="portrait"/>
-
-        <activity android:name=".views.PopWebviewActivity"
-            android:screenOrientation="portrait"/>
-
+        <activity
+            android:name=".views.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.PopWebviewActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".views.Img_ZoomInOut"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="sensor" />
-
-        <activity android:name=".views.ContentsActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".views.ContentsActivity"
+            android:screenOrientation="portrait" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"

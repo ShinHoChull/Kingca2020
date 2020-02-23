@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/info_backgroundV"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/photos_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@drawable/info_tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/degin_started_radius"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Close"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -14,7 +14,7 @@
     <com.m2comm.kingca2020.modules.customview.CustomView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:h="15"/>
+        app:h="13"/>
 
     <com.m2comm.kingca2020.modules.customview.CustomView
         android:layout_width="wrap_content"

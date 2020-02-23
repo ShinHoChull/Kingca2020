@@ -21,9 +21,9 @@ public class MenuGridViewAdapter extends BaseAdapter {
     };
 
     private String[] names = {
+            "Logine",
             "My Schedule",
-            "Attendance",
-            "Find account",
+            "My Memo",
     };
 
     private Globar g;

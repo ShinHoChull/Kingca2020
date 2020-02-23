@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="main"
+            type="com.m2comm.kingca2020.views.DesignActivity" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.DesignActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/design_type_logo"
+                android:layout_weight="1"
+                android:scaleType="fitEnd"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                />
+
+            <ImageView
+                android:id="@+id/design_type_img"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/design_type1"
+                android:scaleType="fitCenter"
+                android:layout_weight="1"
+                />
+
+            <LinearLayout
+                android:id="@+id/design_type_box"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/degin_type_select_radius"
+                >
+                <TextView
+                    android:id="@+id/design_type_selectBt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Random"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/degin_type_select1_radius"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+
+                <LinearLayout
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#075e94"
+                    />
+
+                <TextView
+                    android:id="@+id/design_type_selectBt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Type1"
+                    android:gravity="center"
+                    android:textColor="#075e94"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+
+                <LinearLayout
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#075e94"
+                    />
+
+                <TextView
+                    android:id="@+id/design_type_selectBt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Type2"
+                    android:gravity="center"
+                    android:textColor="#075e94"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/design_type_txt"
+                android:scaleType="fitCenter"
+                />
+
+            <LinearLayout
+                android:id="@+id/design_startBt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/degin_started_radius"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Get Started"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

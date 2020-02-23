@@ -35,37 +35,26 @@ public class MenuActivity extends Activity implements View.OnClickListener, Adap
     private GridView gridview;
     private Globar g;
 
-    private LinearLayout boothBt , pieH1 ;
-    private ImageView closeBt, loginBt, setting, menu_homeImg;
-    private TextView loginText, menu_homeText;
+    private LinearLayout boothBt ,settingBt , appGuideBt ;
+    private ImageView closeBt ;
+
 
     private Custom_SharedPreferences csp;
 
     private void listenerRegister() {
         this.gridview.setOnItemClickListener(this);
         this.closeBt.setOnClickListener(this);
-        this.loginBt.setOnClickListener(this);
-        this.loginText.setOnClickListener(this);
-        this.setting.setOnClickListener(this);
         this.boothBt.setOnClickListener(this);
-        this.menu_homeText.setOnClickListener(this);
-        this.menu_homeImg.setOnClickListener(this);
+        findViewById(R.id.menu_settingBt).setOnClickListener(this);
+        findViewById(R.id.menu_appguideBt).setOnClickListener(this);
     }
 
     private void init() {
         this.g = new Globar(this);
         this.csp = new Custom_SharedPreferences(this);
-
         this.gridview = findViewById(R.id.menu_grid);
         this.closeBt = findViewById(R.id.menu_closeBt);
-        this.loginBt = findViewById(R.id.menu_login_img);
-        this.loginText = findViewById(R.id.menu_login_text);
-        this.setting = findViewById(R.id.menu_login_setting);
         this.boothBt = findViewById(R.id.boothBt);
-        this.menu_homeImg = findViewById(R.id.menu_homeImg);
-        this.menu_homeText = findViewById(R.id.menu_homeText);
-        this.pieH1 = findViewById(R.id.pieH1);
-
 
 
         this.listenerRegister();
@@ -73,12 +62,20 @@ public class MenuActivity extends Activity implements View.OnClickListener, Adap
         this.header = new ArrayList<>();
 
         header.add(new GroupItem(R.drawable.menu_ic1, "KINGCA",
-                new ArrayList<ChildItem>(Arrays.asList(new ChildItem("- Welcome"), new ChildItem("- Overview"),
-                        new ChildItem("- Organizing Committee"), new ChildItem("- Past KINGCA"), new ChildItem("- KGCA")))));
+                new ArrayList<ChildItem>(Arrays.asList(
+                        new ChildItem("- Welcome"),
+                        new ChildItem("- Overview"),
+                        new ChildItem("- Organizing Committee"),
+                        new ChildItem("- Past KINGCA"),
+                        new ChildItem("- KGCA")))));
 
         header.add(new GroupItem(R.drawable.menu_ic2, "Program",
-                new ArrayList<ChildItem>(Arrays.asList(new ChildItem("- Program at a glance"), new ChildItem("- Program by Day")
-                        , new ChildItem("- Program by Session"), new ChildItem("- My Schedule"), new ChildItem("- Now")))));
+                new ArrayList<ChildItem>(Arrays.asList(
+                        new ChildItem("- Program at a glance"),
+                        new ChildItem("- Program by Day")
+                        , new ChildItem("- Program by Session"),
+                        new ChildItem("- My Schedule"),
+                        new ChildItem("- Now")))));
 
         header.add(new GroupItem(R.drawable.menu_ic3, "Abstract",
                 new ArrayList<ChildItem>()));
@@ -87,18 +84,34 @@ public class MenuActivity extends Activity implements View.OnClickListener, Adap
                 new ArrayList<ChildItem>()));
 
         header.add(new GroupItem(R.drawable.menu_ic5, "Venue / Floor Plan",
-                new ArrayList<ChildItem>(Arrays.asList(new ChildItem("- Floor Plan"), new ChildItem("- Venue")
+                new ArrayList<ChildItem>(Arrays.asList(
+                        new ChildItem("- Floor Plan"),
+                        new ChildItem("- Venue")
                         , new ChildItem("- Transportation")))));
 
         header.add(new GroupItem(R.drawable.menu_ic6, "General Information",
-                new ArrayList<ChildItem>(Arrays.asList(new ChildItem("- Presentation Guideline"), new ChildItem("- Education Session")
-                        , new ChildItem("- Research Group Meeting"), new ChildItem("- Luncheon Symposium / Seminar")))));
-
+                new ArrayList<ChildItem>(Arrays.asList(
+                        new ChildItem("- General Information"),
+                        new ChildItem("- Presentation Guideline"),
+                        new ChildItem("- Attractions of Seoul"),
+                        new ChildItem("- Education Session"),
+                        new ChildItem("- Research Group Meeting"),
+                        new ChildItem("- Luncheon Symposium / Seminar")))));
         header.add(new GroupItem(R.drawable.menu_ic7, "Photo Gallery",
                 new ArrayList<ChildItem>()));
+//        header.add(new GroupItem(R.drawable.menu_ic7, "Photo Gallery",
+//                new ArrayList<ChildItem>(Arrays.asList(
+//                        new ChildItem("Apr 09 (Thu)"),
+//                        new ChildItem("Apr 10 (Fri)"),
+//                        new ChildItem("Apr 11 (Sat)"),
+//                        new ChildItem("Participants' Gallery"),
+//                        new ChildItem("Photo Zone")
+//                ))));
 
         header.add(new GroupItem(R.drawable.menu_ic8, "Sponsors/ Booth",
-                new ArrayList<ChildItem>(Arrays.asList(new ChildItem("- Sponsors"), new ChildItem("- Booth")))));
+                new ArrayList<ChildItem>(Arrays.asList(
+                        new ChildItem("- Sponsors"),
+                        new ChildItem("- Booth")))));
 
         header.add(new GroupItem(R.drawable.menu_ic9, "Notice",
                 new ArrayList<ChildItem>()));
@@ -163,11 +176,11 @@ public class MenuActivity extends Activity implements View.OnClickListener, Adap
 
 
         //로그인 확인.
-        if (csp.getValue("isLogin", false)) {
-            this.loginText.setVisibility(View.GONE);
-            this.loginBt.setVisibility(View.GONE);
-            this.setting.setVisibility(View.VISIBLE);
-        }
+//        if (csp.getValue("isLogin", false)) {
+//            this.loginText.setVisibility(View.GONE);
+//            this.loginBt.setVisibility(View.GONE);
+//            this.setting.setVisibility(View.VISIBLE);
+//        }
     }
 
     private void changefoldImg(int text, GroupHolder holder) {
@@ -321,32 +334,33 @@ public class MenuActivity extends Activity implements View.OnClickListener, Adap
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.menu_homeImg:
-            case R.id.menu_homeText:
-                Intent main = new Intent(this, MainActivity.class);
-                main.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-                startActivity(main);
-                finish();
-                break;
+//            case R.id.menu_homeImg:
+//            case R.id.menu_homeText:
+//                Intent main = new Intent(this, MainActivity.class);
+//                main.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+//                startActivity(main);
+//                finish();
+//                break;
 
             case R.id.menu_closeBt:
                 finish();
                 overridePendingTransition(0, R.anim.anim_slide_out_left);
                 break;
 
-            case R.id.menu_login_img:
-            case R.id.menu_login_text:
-                Intent content = new Intent(this, LoginActivity.class);
-                startActivity(content);
-                overridePendingTransition(R.anim.anim_slide_in_bottom_login, 0);
-                finish();
-                break;
-            case R.id.menu_login_setting:
+//            case R.id.menu_login_img:
+//            case R.id.menu_login_text:
+//                Intent content = new Intent(this, LoginActivity.class);
+//                startActivity(content);
+//                overridePendingTransition(R.anim.anim_slide_in_bottom_login, 0);
+//                finish();
+//                break;
+            case R.id.menu_settingBt:
                 Intent setting = new Intent(this, SettingActivity.class);
                 startActivity(setting);
                 overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_out_left);
                 finish();
                 break;
+
             case R.id.boothBt:
                 Log.d("barcode=",this.g.urls.get("boothEvent")+"?barcode="+csp.getValue("reg_num",""));
                 Intent booth = new Intent(this, ContentsActivity.class);
@@ -369,7 +383,7 @@ public class MenuActivity extends Activity implements View.OnClickListener, Adap
 
         switch (position) {
             case 0:
-                //MySchedule
+                //Login
                 if (!isLogin()) {
                     this.g.loginAlertMessage("Alert", "Do you want to sign in?", this);
                     return;
@@ -377,35 +391,26 @@ public class MenuActivity extends Activity implements View.OnClickListener, Adap
                 content.putExtra("paramUrl", this.g.linkUrl[1][3]);
                 break;
             case 1:
+                //My Schedule
                 if (!isLogin()) {
                     this.g.loginAlertMessage("Alert", "Do you want to sign in?", this);
                     return;
+                } else {
+                    content.putExtra("paramUrl", this.g.linkUrl[1][3]);
                 }
-                content.putExtra("content", true);
-                content.putExtra("paramUrl", this.g.urls.get("attendance") + "?id=" + csp.getValue("userid", ""));
+
 
                 break;
             case 2:
-                if (isLogin()) {
-                    content.putExtra("paramUrl", this.g.urls.get("myMemo"));
-                    break;
-                } else {
-                    //Find Acount
-//                    Intent find = new Intent(this, FindActivity.class);
-//                    startActivity(find);
-//                    overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_out_left);
-//                    finish();
-                    content.putExtra("content", true);
-                    content.putExtra("paramUrl", this.g.urls.get("findAccount"));
-                    break;
-                }
+                //MyMemo
+                content.putExtra("paramUrl", this.g.urls.get("myMemo"));
+                break;
         }
 
         startActivity(content);
         overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_out_left);
 
         finish();
-
     }
 
     private void moveView(int groupPostion, int childPosition) {

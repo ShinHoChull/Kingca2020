@@ -79,7 +79,6 @@ public class MainViewModel implements View.OnClickListener, AdapterView.OnItemCl
         Display display = a.getWindowManager().getDefaultDisplay();
         Point size = new Point();
         display.getSize(size);
-
     }
 
     public void onResume() {
@@ -91,8 +90,6 @@ public class MainViewModel implements View.OnClickListener, AdapterView.OnItemCl
                 activity.mainGrid.setAdapter(cga);
             }
         });
-
-
     }
 
     private void init() {
